@@ -1,0 +1,20 @@
+<ion-view view-title="Protibaadi">
+	
+  <ion-content class="padding bg" scroll="false">
+
+    <button class="button button-full button-calm" ng-click="liste()">Search for Bluetooth Device</button>
+      
+      	<ion-list ng-repeat="device in btlist">
+        
+	        <ion-item class="right-button" ng-click="connectWithThis(device.address, device.name)">
+	          	<h2>{{device.name}}</h2>
+	          	<p>{{device.id}}</p>
+
+	        </ion-item>
+      
+      	</ion-list>
+
+      	<div id="map" data-tap-disable="true"></div>
+
+  </ion-content>
+</ion-view>

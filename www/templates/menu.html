@@ -1,0 +1,48 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-assertive">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content class="another-bg">
+      <div id="menu-layer-two">
+        <img src="img/icon.png" width="100" height="100">
+        <h3>Protibaadi</h3>
+        <!-- <h6>proshonna.nabila@gmail.com</h6> -->
+      </div>
+
+      <ion-list>
+        <!-- <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item> -->
+        <ion-item menu-close href="#/app/home">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/app/add-number">
+          Contacts
+        </ion-item>
+        <ion-item menu-close href="#/app/message">
+          My Message
+        </ion-item>
+        <ion-item menu-close href="#/app/map">
+          My Location
+        </ion-item>
+        <ion-item menu-close ng-click="disconnect()">
+          Disconnect
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

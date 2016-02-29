@@ -1,0 +1,18 @@
+<ion-view view-title="Protibaadi">
+  
+  <ion-content class="padding bg" scroll="false">
+
+    <ion-item ng-show="saved">{{saved}}</ion-item>
+
+    <div class="card list">
+      <ion-item class="item-divider">Type your new message here</ion-item>
+      <label class="item item-input item-floating-label">
+        <input type="text" placeholder="Message goes here" ng-model="message">
+      </label>
+
+      <button class="button button-full button-calm" ng-click="save(message)">Save</button>
+    </div>
+
+
+  </ion-content>
+</ion-view>

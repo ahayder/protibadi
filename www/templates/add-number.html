@@ -1,0 +1,13 @@
+<ion-view view-title="Mobile Numbers">
+	<ion-nav-buttons side="right">
+		<button ng-click="showNumberModal()">
+			<i class="icon ion-plus"></i>
+		</button>
+		
+	</ion-nav-buttons>
+  <ion-content class="bg" scroll="false">
+    <ion-list ng-repeat="number in mobileNumbers">
+		<ion-item>{{number.name}}: 0{{number.number}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
